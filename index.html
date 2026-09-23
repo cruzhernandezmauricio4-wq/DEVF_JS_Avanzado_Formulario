@@ -18,15 +18,23 @@
     <label for="telefono">Teléfono:</label>
     <input type="tel" id="telefono" name="telefono" required>
 
-    <label>Intereses:</label>
-    <label><input type="checkbox" name="intereses" value="tecnología"> Tecnología</label>
-    <label><input type="checkbox" name="intereses" value="negocios"> Negocios</label>
-    <label><input type="checkbox" name="intereses" value="arte"> Arte</label>
+    <fieldset>
+      <legend>Intereses:</legend>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="intereses" value="tecnología"> Tecnología</label>
+        <label><input type="checkbox" name="intereses" value="negocios"> Negocios</label>
+        <label><input type="checkbox" name="intereses" value="arte"> Arte</label>
+      </div>
+    </fieldset>
 
-    <label>Horario preferido:</label>
-    <label><input type="radio" name="horario" value="mañana" required> Mañana</label>
-    <label><input type="radio" name="horario" value="tarde"> Tarde</label>
-    <label><input type="radio" name="horario" value="noche"> Noche</label>
+    <fieldset>
+      <legend>Horario preferido:</legend>
+      <div class="radio-group">
+        <label><input type="radio" name="horario" value="mañana" required> Mañana</label>
+        <label><input type="radio" name="horario" value="tarde"> Tarde</label>
+        <label><input type="radio" name="horario" value="noche"> Noche</label>
+      </div>
+    </fieldset>
 
     <label for="fecha">Fecha del evento:</label>
     <input type="date" id="fecha" name="fecha" required>
